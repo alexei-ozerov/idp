@@ -1,0 +1,40 @@
+#!/usr/bin/env nu
+
+#
+# Import script components.
+#
+
+source scripts/lib/init.nu
+
+source scripts/container.nu
+source scripts/image.nu
+source scripts/kind.nu
+
+#
+# Main
+#
+
+# Platform management tool.
+def main [] {
+  create_default_configuration 
+  ./platform --help
+}
+
+# Reconfigure the Platform CLI defaults
+def "main reconfigure" [] {
+  reconfigure
+}
+
+# Create a resource. 
+def "main create" [] {}
+
+# Get a resource. 
+def "main get" [] {}
+
+# Delete a resource. 
+def "main delete" [] {}
+
+# Update a resource. 
+def "main update" [] {}
+
+
