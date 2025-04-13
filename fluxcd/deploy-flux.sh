@@ -6,4 +6,5 @@ flux bootstrap github \
   --repository=https://github.com/alexei-ozerov/idp \
   --branch=podinfo-test \
   --path=./clusters/development \
-  --personal
+  --personal \
+  --private=false
