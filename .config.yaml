@@ -1,0 +1,3 @@
+containerization:
+  engine: podman
+  registry: localhost:5000/
