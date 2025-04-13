@@ -7,6 +7,7 @@
 source scripts/lib/init.nu
 
 source scripts/container.nu
+source scripts/fluxcd.nu
 source scripts/image.nu
 source scripts/kind.nu
 
