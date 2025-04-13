@@ -9,10 +9,10 @@
 #
 
 # Manage FluxCD actions.
-def "main flux" [] {}
+def "main create flux" [] {}
 
 # Create a bootstrap deployment of Flux for a given repository.
-def "main flux create bootstrap github" [
+def "main create flux bootstrap github test" [
   --owner: string # Github username
   --repository: string # Repository name
   --branch: string = "main" # (Optional) Override default branch name
@@ -26,3 +26,16 @@ def "main flux create bootstrap github" [
     --path=clusters/my-cluster 
     --personal)
 }
+
+
+def "main create flux github bootstrap" [] {
+  (flux bootstrap github 
+    --token-auth 
+    --owner=alexei-ozerov 
+    --repository=idp 
+    --branch=main 
+    --path=./fluxcd/clusters/development 
+    --personal 
+    --private=false)
+}
+

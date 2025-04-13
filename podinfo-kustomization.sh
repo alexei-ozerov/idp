@@ -9,4 +9,4 @@ flux create kustomization podinfo \
   --interval=30m \
   --retry-interval=2m \
   --health-check-timeout=3m \
-  --export >./clusters/development/podinfo-kustomization.yaml
+  --export >./fluxcd/clusters/development/podinfo-kustomization.yaml
