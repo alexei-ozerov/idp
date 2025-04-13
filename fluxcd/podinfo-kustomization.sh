@@ -1,7 +1,7 @@
 #!/bin/bash
 
 flux create kustomization podinfo \
-  --target-namespace=podinfo \
+  --target-namespace=default \
   --source=podinfo \
   --path="./kustomize" \
   --prune=true \
