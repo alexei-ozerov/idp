@@ -35,7 +35,6 @@ Run the following command to enable access to Grafana:
 
 ```
 kubectl -n monitoring port-forward svc/kube-prometheus-stack-grafana  3000:80 --address 0.0.0.0
-
 ```
 
 After this, navigate to http://localhost:3000/dashboards, using the credentials "admin" and "flux" to login.
