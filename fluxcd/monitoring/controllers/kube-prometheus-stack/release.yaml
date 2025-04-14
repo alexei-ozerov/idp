@@ -39,4 +39,5 @@ spec:
             app.kubernetes.io/component: monitoring
     grafana:
       defaultDashboardsEnabled: false
+      # For a real deployment, please change how this is configured.
       adminPassword: flux
