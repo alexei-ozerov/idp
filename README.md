@@ -49,7 +49,7 @@ After this, navigate to http://localhost:3000/dashboards, using the credentials 
 
 [Kubeseal](https://github.com/bitnami-labs/sealed-secrets) is used to facilitate secrets management.
 
-# (ozerova) TODO: Add this functionality into ./platform
+// (ozerova) TODO: Add this functionality into ./platform
 Run the following to fetch the public key to encrypt your secrets:
 
 ```
