@@ -39,3 +39,18 @@ kubectl -n monitoring port-forward svc/kube-prometheus-stack-grafana  3000:80 --
 ```
 
 After this, navigate to http://localhost:3000/dashboards, using the credentials "admin" and "flux" to login.
+
+### Secrets 
+
+[Kubeseal](https://github.com/bitnami-labs/sealed-secrets) is used to facilitate secrets management.
+
+# (ozerova) TODO: Add this functionality into ./platform
+Run the following to fetch the public key to encrypt your secrets:
+
+```
+kubeseal --fetch-cert \
+--controller-name=sealed-secrets-controller \
+--controller-namespace=flux-system \
+> ${IDP_PROJECT_ROOT}/kubeseal/pub-${CLUSTER_NAME}-secrets.pem
+```
+
