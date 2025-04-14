@@ -8,6 +8,12 @@ The default local development workflow can be set up using the following tools:
 - Docker/Podman
 - KinD 
 
+### Prerequisites
+
+Dependencies are managed via [devbox](https://www.jetify.com/docs/devbox/quickstart/) - please install and activate a devbox shell ([direnv](https://direnv.net/) is supported and configured to start when entering this repository) before proceeding (or its dependencies as found in the `devbox.json` file).
+
+### KinD Cluster
+
 Run `./platform create kind <cluster name>` to spin up a local Kubernetes cluster. 
 
 The default configuration IDP repo configuration will spin up the following stack to your local development cluster once you run `./platform create flux github bootstrap`:
